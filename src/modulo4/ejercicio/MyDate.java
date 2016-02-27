@@ -84,22 +84,58 @@ public class MyDate {
     
     /**
      * Retorna el nombre del numero del mes
-     * ej. 2 = Febrero;
+     * ej. this.month = 2 
+     * return Febrero;
      * @return El nombre del mes
      */
     public String getNameMonth(){
         String nameMonth = "";
+        switch (this.month) {
+            case 1:
+                nameMonth = "Enero";
+                break;
+            case 2:
+                nameMonth = "Febrero";
+                break;   
+            default:
+                nameMonth = "Error";
+        }
         return nameMonth;
     }
     
      /**
      * Retorna el numero de dias en el mes
-     * ej. 2 = Febrero;
+     * ej. this.month = 2 
+     * return 28;
      * @return El numero del mes
      */
     public int getDaysMonth(){
-        int nameMonth = 0;
-        return nameMonth;
+        int daysMonth = 0;
+        final int x = 4;
+        switch (this.month) {
+            case x:
+            case 6:
+            case 9:
+            case 11:
+                daysMonth=30;
+                break;
+            case 2: 
+                daysMonth=28;
+                break;
+            default:
+                break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                daysMonth=31;
+                break;
+        }
+        
+        return daysMonth;
     }
     
     
