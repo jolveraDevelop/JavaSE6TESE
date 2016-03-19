@@ -1,4 +1,4 @@
-package modulo6;
+package modulo6.test;
 
 public class TestSobreEscritura {
     public static void main(String[] args) {
