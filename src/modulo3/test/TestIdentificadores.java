@@ -11,14 +11,14 @@ public class TestIdentificadores {
         int Valido;
         int $valido;
         int _valido;
-        int 5valido;
+        //int 5valido;
         int $;
         int _$;
         int $5;
-        int &valido;
+        //int &valido;
         int $$$$$invalido___;
         int _____invalido523$$$$;
-        int final;
+        //int final;
         int _final;
     }
 }

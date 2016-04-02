@@ -11,7 +11,7 @@ import modulo6.granja.Perro;
  */
 public class TestPolimorfismo {
     public static void main(String[] args) {
-        Animal a = new Animal();
+        Animal a = null;// new Animal();
         a.comer();
         a = new Perro();
         a.comer();

@@ -29,7 +29,7 @@ public class TestPrimitivos {
         byte b = 127;
         //byte b2 = 128;
         short sh1 = 128;
-        byte b4 = sh1;
+        //byte b4 = sh1;
         System.out.println(sh1);
         short sh2 = 32767;
         int in1= 32767;
