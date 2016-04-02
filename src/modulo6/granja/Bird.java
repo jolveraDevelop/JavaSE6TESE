@@ -1,5 +1,5 @@
 
-package modulo7;
+package modulo6.granja;
 
 import modulo7.interfaces.Flyer;
 
@@ -7,12 +7,18 @@ import modulo7.interfaces.Flyer;
  *
  * @author Roberto Olveras
  */
-public class SuperMan extends SuperHeroe implements Flyer{
+public class Bird extends Animal implements Flyer{
 
     @Override
-    public void ataque() {
-        System.out.println("super golpe");
-        Marciano.totalMarcianosEnCombate--;
+    public void sonido() {
+    }
+
+    @Override
+    public void comer() {
+    }
+
+    @Override
+    public void formaNacer() {
     }
 
     @Override
@@ -26,5 +32,5 @@ public class SuperMan extends SuperHeroe implements Flyer{
     @Override
     public void fly() {
     }
- 
+
 }
