@@ -10,6 +10,9 @@ public abstract class Animal {
     public abstract void comer();
     public abstract void formaNacer();
     
+    public Animal(String s){
+        
+    }    
     
     public boolean estoyVivo(){
         // validar

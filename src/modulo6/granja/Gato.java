@@ -7,6 +7,12 @@ package modulo6.granja;
  */
 public class Gato extends Animal{
 
+    public Gato() {
+        super("");
+    }
+    
+    
+
     @Override
     public void sonido() {
         System.out.println("Soy un gato miau");

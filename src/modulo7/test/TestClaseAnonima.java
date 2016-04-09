@@ -20,7 +20,7 @@ public class TestClaseAnonima {
           new G(){ public void met(){System.out.println("En Anonima");otro();}
                     public void otro(){}
           };
-        gAnon.otro();
+        //gAnon.otro();
         g.met();
         gAnon.met();
     }
