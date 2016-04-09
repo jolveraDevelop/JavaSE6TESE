@@ -5,6 +5,8 @@
 
 package modulo6;
 
+import java.util.Random;
+
 
 public class MyDate {
     /**
@@ -157,6 +159,10 @@ public class MyDate {
     
     public String toString(){
         return "["+day+"/"+month+"/"+year+"]";
+    }
+    
+    public int hashCode(){
+        return new Random().nextInt(5);
     }
     
 }
