@@ -10,10 +10,15 @@ import java.util.TreeMap;
  */
 public class TestTreeMap {
     public static void main(String[] args) {
-        Map map = new TreeMap();
+        // Refactorizar como un map generico
+        Map<Integer,String> map = new TreeMap<Integer,String>();
         map.put(1,"uno");
         map.put(2,"dos");     
         map.put(5,"cinco");
+        //map.put("0","cero");
+        map.put(0,"cero");
+        String valor = (String)map.get(1);
+        String valor2 = map.get(5);
         //map.put(null,"null");
         //map.put(null,"null2");
         map.put(6,"seis");

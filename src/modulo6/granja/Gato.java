@@ -5,7 +5,7 @@ package modulo6.granja;
  *
  * @author Roberto Olveras
  */
-public class Gato extends Animal{
+public class Gato<X> extends Animal<X>{
 
     public Gato() {
         super("");

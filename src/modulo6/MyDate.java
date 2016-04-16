@@ -8,7 +8,7 @@ package modulo6;
 import java.util.Random;
 
 
-public class MyDate implements Comparable{
+public class MyDate implements Comparable<MyDate>{
     /**
      * Representa un dia
      */
@@ -166,13 +166,7 @@ public class MyDate implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        MyDate parametro = null;
-        if(o instanceof MyDate){
-            parametro = (MyDate)o;
-        }else{
-            throw new IllegalArgumentException("El objeto no es un MyDates");
-        }
+    public int compareTo(MyDate parametro) {
        if(this.day > parametro.day){
            return 1;
        }else if(this.day < parametro.day){
