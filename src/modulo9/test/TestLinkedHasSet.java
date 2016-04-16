@@ -1,17 +1,16 @@
 
 package modulo9.test;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
  *
  * @author Roberto Olveras
  */
-public class TestHashSetString {
-    
+public class TestLinkedHasSet {
     public static void main(String[] args) {
-        Set set = new HashSet();
+        Set set = new LinkedHashSet();
         System.out.println(set);
         set.add("hola");
         System.out.println(set);
@@ -21,11 +20,11 @@ public class TestHashSetString {
         System.out.println(set);
         set.add("dsdsad");
         System.out.println(set);
-        set.add("dsdtdrsasdasad");
+        set.add("otro");
         System.out.println(set);
-        set.add("sdfdfdsf");
+        set.add("el que sigue");
         System.out.println(set);
-        
+        set.add("el ultimo");
+        System.out.println(set);
     }
-
 }

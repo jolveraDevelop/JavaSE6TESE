@@ -8,7 +8,7 @@ package modulo6;
 import java.util.Random;
 
 
-public class MyDate {
+public class MyDate implements Comparable{
     /**
      * Representa un dia
      */
@@ -163,6 +163,23 @@ public class MyDate {
     
     public int hashCode(){
         return new Random().nextInt(5);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        MyDate parametro = null;
+        if(o instanceof MyDate){
+            parametro = (MyDate)o;
+        }else{
+            throw new IllegalArgumentException("El objeto no es un MyDates");
+        }
+       if(this.day > parametro.day){
+           return 1;
+       }else if(this.day < parametro.day){
+           return -1;
+       }else{
+           return 0;
+       }
     }
     
 }
