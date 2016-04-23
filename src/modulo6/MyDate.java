@@ -5,10 +5,11 @@
 
 package modulo6;
 
+import java.io.Serializable;
 import java.util.Random;
 
 
-public class MyDate implements Comparable<MyDate>{
+public class MyDate implements Comparable<MyDate>, Serializable{
     /**
      * Representa un dia
      */
@@ -16,7 +17,7 @@ public class MyDate implements Comparable<MyDate>{
     /**
      * Representa un mes
      */
-    private int month;
+    private transient int month;
     /**
      * Representa un año
      */
